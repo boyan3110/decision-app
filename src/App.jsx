@@ -39,7 +39,7 @@ function App() {
 
   function handleRefine() {
     setScreen("context");
-    // Keep payload + results so they can edit; you can decide to clear results if you prefer
+    
   }
 
   async function handleContinueFromContext(p) {
@@ -47,7 +47,7 @@ function App() {
     setScreen("results");
 
     // Only call API if we don't already have results for this payload
-    // (simple approach: always call; or you can add hashing if needed)
+    
     setResults(null);
     setResultsError(null);
     setResultsLoading(true);
